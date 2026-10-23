@@ -1,5 +1,6 @@
 import { test } from "@playwright/test";
 
+//Using the maximized view port from the cconfig file
 test('Create Lead Using CSS Selectors', async ({page}) => {
     await page.goto('http://leaftaps.com/opentaps/control/main')
     await page.locator('#username').fill('democsr2')
